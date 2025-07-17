@@ -3,7 +3,7 @@
   <head>
     <title>writing</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,25 +29,74 @@
   </head>
   <body>
 
-    <div class="container"> <div class="w-50">
-        <div style="line-height: 3;">&nbsp;</div>
-        
-        <h1 style="font-size: 70px; font-weight: 500;">tallboy writes.</h1>
-        <div style="font-size: 18px; font-weight: 100;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7/16/25</div>
+    <div class="container"><div class="row">
+        <div class="col-6">
+            <div style="line-height: 3;">&nbsp;</div>
+            
+            <h1 style="font-size: 70px; font-weight: 500;">tallboy writes.</h1>
+            <div style="font-size: 18px; font-weight: 100;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7/16/25</div>
 
-        <div style="line-height: 1;">&nbsp;</div>
+            <div style="line-height: 1;">&nbsp;</div>
 
-        <div style="font-size: 50px;">poetry</div>
-        <div style="font-size: 70px; text-align:center;">&nbsp; &nbsp; &nbsp;&</div>
-        <div style="font-size: 50px; text-align:right;">prose</div>
+            <div style="text-align:left;">
+                <div style="font-size: 55px;">poetry</div>
+                <div style="font-size: 18px;">
+                    <a onclick="displayWriting('meditation')">A Meditation on Blues</a>
+                </div>
+            </div>
 
-        <div style="line-height: 1;">&nbsp;</div>
+            <div style="font-size: 70px; text-align:center;">&nbsp; &nbsp; &nbsp;&</div>
+            
+            <div style="text-align:right;">
+                <div style="font-size: 55px;">prose</div>
+            </div>
 
-        <div style="font-size: 20px;"> & published in 
-            <a href="https://uvafralinartmuseum.virginia.edu/system/files/WE24%20Self-Guide.pdf"> Writer's Eye Anthology (2024) </a>
+            <div style="line-height: 1;">&nbsp;</div>
+
+            <div style="font-size: 20px;"> & published in 
+                <a href="https://uvafralinartmuseum.virginia.edu/system/files/WE24%20Self-Guide.pdf"> Writer's Eye Anthology (2024) </a>
+            </div>
+        </div>
+
+        <div class="col-1">
         </div>
         
+        <div class="col-5" id="writingDisplay">
+        </div>
     </div></div>
+
+    <script>
+        const writing = {
+            meditation: `
+            <div style="line-height: 8;">&nbsp;</div>
+
+            <h3>A Meditation on Blues
+            <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 11/17/24</div>
+            </h3>
+
+            <p>
+            I forget colors will contort <br>
+            Dear God. I long for simple hues <br>
+            round-about-round me. Deep within wake darkness. <br>
+            You told me of your blue. <br>
+            I cup my hands. I circle above. <br> 
+            Pray. Deliver — on feathered wings. <br>
+            What a life brought into view. <br>
+            Burning a white, blidning a fire. <br>
+            Hands pressed to all what was. <br>
+            I bow my head before myself. What have I become? <br>
+            Your blue (I drown. I haunt. I feed.) <br>
+            Your blue (I grieve. I gasp. I breathe.) <br>
+            Your blue (Have I yet learned enough?) <br>
+            I mantra: I blue, blue, blue. <br>
+            </p>
+          `,
+        };
+    
+        function displayWriting(id) {
+          document.getElementById('writingDisplay').innerHTML = writing[id];
+        }
+      </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
