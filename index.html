@@ -30,7 +30,7 @@
   <body>
 
     <div class="container"><div class="row">
-        <div class="col-6">
+        <div class="col-5">
             <div style="line-height: 3;">&nbsp;</div>
             
             <h1 style="font-size: 70px; font-weight: 500;">tallboy writes.</h1>
@@ -40,8 +40,10 @@
 
             <div style="text-align:left;">
                 <div style="font-size: 55px;">poetry</div>
-                <div style="font-size: 18px;">
-                    <a onclick="displayWriting('meditation')">A Meditation on Blues</a>
+                <div style="font-size: 16px;">
+                    <a onclick="displayWriting('meditation')">A Meditation on Blues</a>,
+                    &nbsp;
+                    <a onclick="displayWriting('deer')">(Her) The Brown and Speckled Deer</a>
                 </div>
             </div>
 
@@ -61,14 +63,15 @@
         <div class="col-1">
         </div>
 
-        <div class="col-5" id="writingDisplay">
+        <div class="col-6" id="writingDisplay">
             <div style="line-height: 2;">&nbsp;</div>
             <img width="450" height="520" src="image.jpg">
         </div>
     </div></div>
 
     <!-- 
-     ID: `
+        ID:
+         `
             <div style="line-height: 8;">&nbsp;</div>
 
             <h3>TITLE
@@ -108,6 +111,47 @@
             I mantra: I blue, blue, blue. <br>
             </p>
           `,
+
+          deer: `
+            <div style="line-height: 8;">&nbsp;</div>
+
+            <h3>(Her) The Brown and Speckled Deer
+            <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 12/5/22</div>
+            </h3>
+
+            <p>
+            My eyes locked with the Deer’s (Perked & wary in the glade)<br>
+            Stepped in her world (In my walk to leave mine’s behind)<br>
+            Wished she watched her steps (Her careless meanderings)<br>
+            Aimless into roads smash into her (It’s evening rush hour)<br>
+            Bones, sinews, & all, spread & splayed (A Jackson Pollack on burning asphalt)<br>
+            Her eyes left leered (Permanent) to a fracturing expanse<br>
+            Witness to the (Said) cost of freedom (Tall grey corporate)<br>
+            (Said to) Chart apart from (Animalistic) urges: always charged with (Animalistic) drive<br>
+            That is the beginning of stories weaved into our fabric (Turn wine into water)<br>
+            Pile civil folds to be dressed (Clothe the absence of friend or foe)<br>
+            Cloud the face of judgement to my sin laid bare (To her it is apparent)<br>
+            The Predator has run amuck (Five cruel wicked fingers)<br>
+            Beat my brow until blue & blamed (As she runs into a mask of green)<br>
+            My sole bare shoes hit the empty street (Always be led back)<br>
+            She need only exists (My requirement is to live)<br>
+            A blue tie around my neck (A black jacket straight my chest)<br>
+            Back to courses charted amongst filled pews (The word of God reigns)<br>
+            They had said she doesn’t have a soul (Yet I do)<br>
+            Punish my throat with a burn (Corporal to laugh, to cry, to sing!)<br>
+            In a world unraveling the seam (Her instinct is deep within the trees)<br>
+            A solace I fail to find (Fuck absurdist philosophy)<br>
+            Step by weighted step (I want to be free)<br>
+            Stopped short by worldly religion (I find myself with her)<br>
+            My eyes peeled back (On she & I)<br>
+            My cheeks (Inflamed) pressed on either ethereal gate (Lost sight of childish color)<br>
+            I hold in my hands what they say will save me (Bring me back to who I am meant to be)<br>
+            And yet still — the Deer runs away with more than I<br>
+            Far from human creation Run! Run! Run! Run! Run! (What hands have wrought!)<br>
+            How I envy her (Now a lost blur in the green)<br>
+            </p>
+          `,
+
         };
     
         function displayWriting(id) {
