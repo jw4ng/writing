@@ -34,16 +34,25 @@
             <div style="line-height: 3;">&nbsp;</div>
             
             <h1 style="font-size: 70px; font-weight: 500;">tallboy writes.</h1>
-            <div style="font-size: 18px; font-weight: 100;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7/16/25</div>
+            <div style="font-size: 18px; font-weight: 100;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7/17/25</div>
 
             <div style="line-height: 1;">&nbsp;</div>
 
             <div style="text-align:left;">
                 <div style="font-size: 55px;">poetry</div>
                 <div style="font-size: 16px;">
+                    <a onclick="displayWriting('terrors')">night terrors</a>,
+                    &nbsp;
                     <a onclick="displayWriting('meditation')">A Meditation on Blues</a>,
                     &nbsp;
-                    <a onclick="displayWriting('deer')">(Her) The Brown and Speckled Deer</a>
+                    <a onclick="displayWriting('knitting')">Knitting Lessons</a>,
+                    &nbsp;
+
+                    <br>
+
+                    <a onclick="displayWriting('deer')">(Her) The Brown and Speckled Deer</a>,
+                    &nbsp;
+                    <a onclick="displayWriting('summers')">Gorgeous Summers</a>
                 </div>
             </div>
 
@@ -70,8 +79,7 @@
     </div></div>
 
     <!-- 
-        ID:
-         `
+        ID: `
             <div style="line-height: 8;">&nbsp;</div>
 
             <h3>TITLE
@@ -81,16 +89,19 @@
             <p>
             WRITING<br>
             </p>
+
+            <div style="line-height: 1;">&nbsp;</div>
           `,
 
     -->
 
     <script>
         const writing = {
-            meditation: `
+          meditation: `
             <div style="line-height: 8;">&nbsp;</div>
 
             <h3>A Meditation on Blues
+            <div style="font-size: 16px; font-weight: 100;">Leonardo Nierman, Meditation</div>
             <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 11/17/24</div>
             </h3>
 
@@ -110,6 +121,8 @@
             Your blue (Have I yet learned enough?) <br>
             I mantra: I blue, blue, blue. <br>
             </p>
+
+            <div style="line-height: 2;">&nbsp;</div>
           `,
 
           deer: `
@@ -120,39 +133,132 @@
             </h3>
 
             <p>
-            My eyes locked with the Deer’s (Perked & wary in the glade)<br>
-            Stepped in her world (In my walk to leave mine’s behind)<br>
-            Wished she watched her steps (Her careless meanderings)<br>
-            Aimless into roads smash into her (It’s evening rush hour)<br>
-            Bones, sinews, & all, spread & splayed (A Jackson Pollack on burning asphalt)<br>
-            Her eyes left leered (Permanent) to a fracturing expanse<br>
-            Witness to the (Said) cost of freedom (Tall grey corporate)<br>
-            (Said to) Chart apart from (Animalistic) urges: always charged with (Animalistic) drive<br>
-            That is the beginning of stories weaved into our fabric (Turn wine into water)<br>
-            Pile civil folds to be dressed (Clothe the absence of friend or foe)<br>
-            Cloud the face of judgement to my sin laid bare (To her it is apparent)<br>
-            The Predator has run amuck (Five cruel wicked fingers)<br>
-            Beat my brow until blue & blamed (As she runs into a mask of green)<br>
-            My sole bare shoes hit the empty street (Always be led back)<br>
-            She need only exists (My requirement is to live)<br>
-            A blue tie around my neck (A black jacket straight my chest)<br>
-            Back to courses charted amongst filled pews (The word of God reigns)<br>
-            They had said she doesn’t have a soul (Yet I do)<br>
-            Punish my throat with a burn (Corporal to laugh, to cry, to sing!)<br>
-            In a world unraveling the seam (Her instinct is deep within the trees)<br>
-            A solace I fail to find (Fuck absurdist philosophy)<br>
-            Step by weighted step (I want to be free)<br>
-            Stopped short by worldly religion (I find myself with her)<br>
-            My eyes peeled back (On she & I)<br>
-            My cheeks (Inflamed) pressed on either ethereal gate (Lost sight of childish color)<br>
-            I hold in my hands what they say will save me (Bring me back to who I am meant to be)<br>
-            And yet still — the Deer runs away with more than I<br>
-            Far from human creation Run! Run! Run! Run! Run! (What hands have wrought!)<br>
-            How I envy her (Now a lost blur in the green)<br>
+            My eyes locked with the Deer’s (Perked & wary in the glade) <br>
+            Stepped in her world (In my walk to leave mine’s behind) <br>
+            Wished she watched her steps (Her careless meanderings) <br>
+            Aimless into roads smash into her (It’s evening rush hour) <br>
+            Bones, sinews, & all, spread & splayed (A Jackson Pollack on burning asphalt) <br>
+            Her eyes left leered (Permanent) to a fracturing expanse <br>
+            Witness to the (Said) cost of freedom <br>
+            (Said to) Chart apart from (Animalistic) urges: always charged with (Animalistic) drive <br>
+            That is the beginning of stories weaved into our fabric (Turn wine into water) <br>
+            Pile civil folds to be dressed (Clothe the absence of friend or foe) <br>
+            Cloud the face of judgement to my sin laid bare (To her it is apparent) <br>
+            The Predator has run amuck (Five cruel wicked fingers) <br>
+            Beat my brow until blue & blamed (As she runs into a mask of green) <br>
+            My sole bare shoes hit the empty street (Always be led back )<br>
+            A blue tie around my neck (A black jacket straight my chest) <br>
+            Back to courses charted amongst filled pews (The word of God reigns) <br>
+            They had said she doesn’t have a soul (Yet I do) <br>
+            Punish my throat with a burn (Corporal to laugh, to cry, to sing!) <br>
+            In a world unraveling the seam (Her instinct is deep within the trees) <br>
+            A solace I fail to find (Fuck absurdist philosophy) <br>
+            Stopped short by worldly religion (I find myself with her) <br>
+            My eyes peeled back (On she & I) <br>
+            My cheeks (Inflamed) pressed on either ethereal gate (Lost sight of childish color) <br>
+            I hold in my hands what they say will save me (Bring me back to who I am meant to be) <br>
+            And yet still — the Deer runs away with more than I <br>
+            Far from human creation <i>Run! Run! Run! Run! Run!</i> (What hands have wrought!) <br>
+            How I envy her (Now a lost blur in the green)
             </p>
+
+            <div style="line-height: 2;">&nbsp;</div>
           `,
 
-        };
+          summers: `
+            <div style="line-height: 8;">&nbsp;</div>
+
+            <h3>Gorgeous Summers
+            <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 12/5/22</div>
+            </h3>
+
+            <p>
+            Blissful still, it’s the promise of a good time <br>
+            when winds buffet to the tunes of stereo rhymes. <br>
+            Laughter collides in backseat where bodies smoosh together <br>
+            worries lost to California weather. <br>
+            Heat waves beat, trap time in lazy days. <br>
+            slipping under to fever daydreams (Black flyaways). <br>
+            Blistering heat beads sweat across chafed brows <br>
+            Trailing past tan lines, all the way down. <br>
+            Glistening half-naked torsos hold onto an arrogant pride <br>
+            Glean pleasure aroused (What I wished to call mine). <br>
+            Bares its roaring head — without a muzzle — traces <br>
+            Muscled grooves & dips to forbidden places. <br>
+            Under summer’s smolder is a painted oasis <br>
+            lingers such tinted nostalgia (My heart still races). <br>
+            An ache rises as sun comes to set. <br>
+            Flushed lips against my ear where disbelief is met. <br>
+            (The last whisper) The end of such gorgeous summers.
+            </p>
+
+            <div style="line-height: 2;">&nbsp;</div>
+          `,
+            
+          terrors: `
+            <div style="line-height: 8;">&nbsp;</div>
+
+            <h3>night terrors
+            <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 7/17/25</div>
+            </h3>
+
+            <p>
+              last night, a man came: through my window <br>
+              and fucked me, that i forgot my religion <br>
+              that i sit at the backs, of the congregation <br>
+              at the backs, of heads: asking if they’d known <br>
+              asking if they’d tell; asking if they’d past by what damns me <br>
+              given eyes but unlike mine <br> 
+              stare at men dreamt women and women dreamt men <br>
+              seeking forgiveness for last night <br>
+              plead that i have sinned; so i snapped and snipped away <br>
+              my head down solemn as i pray <br>
+              instead to stare at wandering eyes that met mine <br>
+              what remains of this freedom fractured<br>
+              that if i cannot fly, can cry; grieve over splintered wings <br>
+              left divots — blood cross guilty hands <br>  
+            </p>
+
+            <div style="line-height: 2;">&nbsp;</div>
+          `,
+        
+          knitting: `
+              <div style="line-height: 8;">&nbsp;</div>
+
+              <h3>Knitting Lessons
+              <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 12/5/22</div>
+              </h3>
+
+              <p>
+              I learned to knit from men on Youtube, I used two needles & a ball of yarn. Hands guided by instinct: Into a loop, 
+              stitching (What Mother calls) unnatural. Because she forgets us — men. That first created clothes: to make our bare 
+              bodies beautiful. Proud membership in a guild of prestigious crafting: ribbed stockings, sweater vests. (Their 
+              distaste) Lips pouted I imagine at the mistakes I leave behind: Holes. I finger the roundabout, tracing the gaping 
+              border if it then would close in on itself. My hands in mindless repetition. Left at the pew to witness words, lashing 
+              down from the pulpit: 
+              
+              <br>
+              
+              <div style="text-align:center;">
+              “Agape for souls, souls bound by love eternal. <br>
+              Philia for hands, hands held together. <br>
+              Eros for hearts, hearts lost to forever end.” 
+              </div>
+
+              <br>
+              
+              I chased after my Mother’s heart, silent as it broke clean. Did time exist when 
+              her eyes shut to sleep instead to drip in incessant prayer? I swore penance with skin flaps I’d carve out. Like white 
+              flags surrendering in insistence that I committed. My holey clothes laid shame, strewn. I step in whole, cocooned in 
+              naval string. To cleanse, to clean, to rebirth: an empty cavity (My hands & soul have lost a brother). Cheeks marred 
+              in streaks of a warrior, stabbing due violence into blood-caked clothes (I once knit). On scrapped knees — shrieking, 
+              sobbing: <i>It is finished. It is finished.</i>
+
+              </p>
+
+              <div style="line-height: 1;">&nbsp;</div>
+            `,    
+          };
     
         function displayWriting(id) {
           document.getElementById('writingDisplay').innerHTML = writing[id];
