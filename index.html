@@ -33,7 +33,7 @@
         <div class="col-5">
             <div style="line-height: 3;">&nbsp;</div>
             
-            <h1 style="font-size: 70px; font-weight: 500;">tallboy writes.</h1>
+            <h1 onclick="displayWriting('home')" style="cursor: pointer; font-size: 70px; font-weight: 500;">tallboy writes.</h1>
             <div style="font-size: 18px; font-weight: 100;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7/17/25</div>
 
             <div style="line-height: 1;">&nbsp;</div>
@@ -41,18 +41,18 @@
             <div style="text-align:left;">
                 <div style="font-size: 55px;">poetry</div>
                 <div style="font-size: 16px;">
-                    <a onclick="displayWriting('terrors')">night terrors</a>,
+                    <a style="cursor: pointer;" onclick="displayWriting('terrors')">night terrors</a>,
                     &nbsp;
-                    <a onclick="displayWriting('meditation')">A Meditation on Blues</a>,
+                    <a style="cursor: pointer;" onclick="displayWriting('meditation')">A Meditation on Blues</a>,
                     &nbsp;
-                    <a onclick="displayWriting('knitting')">Knitting Lessons</a>,
+                    <a style="cursor: pointer;" onclick="displayWriting('knitting')">Knitting Lessons</a>,
                     &nbsp;
 
                     <br>
 
-                    <a onclick="displayWriting('deer')">(Her) The Brown and Speckled Deer</a>,
+                    <a style="cursor: pointer;" onclick="displayWriting('deer')">(Her) The Brown and Speckled Deer</a>,
                     &nbsp;
-                    <a onclick="displayWriting('summers')">Gorgeous Summers</a>
+                    <a style="cursor: pointer;" onclick="displayWriting('summers')">Gorgeous Summers</a>
                 </div>
             </div>
 
@@ -77,14 +77,14 @@
         </div>
 
         <div class="col-6" id="writingDisplay">
-            <div style="line-height: 2;">&nbsp;</div>
+            <div style="line-height: 3;">&nbsp;</div>
             <img width="450" height="520" src="image.jpg">
         </div>
     </div></div>
 
     <!-- 
         ID: `
-            <div style="line-height: 8;">&nbsp;</div>
+            <div style="line-height: 7;">&nbsp;</div>
 
             <h3>TITLE
             <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; DATE</div>
@@ -101,8 +101,13 @@
 
     <script>
         const writing = {
+          home: `
+            <div style="line-height: 3;">&nbsp;</div>
+            <img width="450" height="520" src="image.jpg">
+          `,
+          
           meditation: `
-            <div style="line-height: 8;">&nbsp;</div>
+            <div style="line-height: 7;">&nbsp;</div>
 
             <h3>A Meditation on Blues
             <div style="font-size: 16px; font-weight: 100;">Leonardo Nierman, Meditation</div>
@@ -130,7 +135,7 @@
           `,
 
           deer: `
-            <div style="line-height: 8;">&nbsp;</div>
+            <div style="line-height: 7;">&nbsp;</div>
 
             <h3>(Her) The Brown and Speckled Deer
             <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 12/5/22</div>
@@ -170,7 +175,7 @@
           `,
 
           summers: `
-            <div style="line-height: 8;">&nbsp;</div>
+            <div style="line-height: 7;">&nbsp;</div>
 
             <h3>Gorgeous Summers
             <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 12/5/22</div>
@@ -200,7 +205,7 @@
           `,
             
           terrors: `
-            <div style="line-height: 8;">&nbsp;</div>
+            <div style="line-height: 7;">&nbsp;</div>
 
             <h3>night terrors
             <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 7/17/25</div>
@@ -227,7 +232,7 @@
           `,
         
           knitting: `
-              <div style="line-height: 8;">&nbsp;</div>
+              <div style="line-height: 7;">&nbsp;</div>
 
               <h3>Knitting Lessons
               <div style="font-size: 12px; font-weight: 100;">&nbsp; &nbsp; 12/5/22</div>
